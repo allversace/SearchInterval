@@ -1,0 +1,24 @@
+<Window x:Class="WpfApp8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="hours" HorizontalAlignment="Left" Margin="125,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="hours_PreviewTextInput"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="250,158,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="minets" HorizontalAlignment="Left" Margin="270,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="minets_PreviewTextInput"/>
+        <TextBox x:Name="interval" HorizontalAlignment="Left" Margin="575,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="interval_PreviewTextInput"/>
+        <Label Content="Часы" HorizontalAlignment="Left" Margin="157,123,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Минуты" HorizontalAlignment="Left" Margin="288,123,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Сколько идет" HorizontalAlignment="Left" Margin="568,123,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="--->" HorizontalAlignment="Left" Margin="466,158,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Button Content="Расчет времени" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" FontSize="20" Click="Button_Click"/>
+        <TextBox x:Name="resultMinutes" HorizontalAlignment="Left" Margin="418,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="resultHours" HorizontalAlignment="Left" Margin="270,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="398,257,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+
+    </Grid>
+</Window>
